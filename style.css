@@ -43,11 +43,11 @@ h6 {
 .navbar ul li a:hover {
   color: #dfa829;
 }
-#menu-icon {
-  display: none;
+#menu-icon,
+#close-icon {
   font-size: 1.5rem;
   cursor: pointer;
-  color: white;
+  display: none; /* Hide by default on desktop */
 }
 
 /* About Section */
@@ -433,7 +433,14 @@ h6 {
     cursor: pointer;
     color: #333;
   }
-
+  .close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
   .navbar ul {
     background-color: #111010;
     width: 200px; /* Fixed width for the menu */
@@ -467,12 +474,7 @@ h6 {
   .navbar ul li a:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Hover effect */
   }
-  #menu-icon {
-    display: block;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #333;
-  }
+ 
 
   .nav-links {
     display: none;
@@ -708,7 +710,7 @@ h6 {
   .icons img {
     width: 60px;
     height: 60px;
-    margin-left: 48px;
+    margin-left: 75px;
   }
 
   .icons h6 {
@@ -719,13 +721,13 @@ h6 {
 
   .icons p {
     font-size: 1rem;
-    margin-right: 25px;
+    margin-right: 10px;
     padding: 15px;
     width: 308px;
   }
   .icons p > a {
     position: relative;
-    right: 50px;
+    right: 40px;
   }
 
   .text {
