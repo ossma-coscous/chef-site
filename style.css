@@ -357,10 +357,11 @@ h6 {
   right: 130px;
   top: 70px;
   background-color: #93ff28;
-  border-radius: 50px;
-  width: 81px;
-  height: 61px;
+  border-radius: 70%;
+  width: 89px;
+  height: 69px;
   object-fit: contain;
+  font-size: 18px;
 }
 
 .icons .icon-1 h6,
